@@ -22,7 +22,7 @@
 /// Maximum tile width or height. Tiles are square except on edges.
 @property (nonatomic) NSInteger tileSize;
 /// The base URL from which to retrieve tiles.
-@property (nonatomic) NSURL *tileBaseURL;
+@property (nonatomic, copy) NSURL *tileBaseURL;
 /// Tile format, eg. "jpg".
 @property (nonatomic, copy) NSString *tileFormat;
 

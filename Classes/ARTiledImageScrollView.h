@@ -32,10 +32,10 @@
 @property (readwrite, nonatomic, assign) BOOL displayTileBorders;
 
 /// Set a background image, displayed while tiles are being downloaded.
-@property (readwrite, nonatomic) NSURL *backgroundImageURL;
+@property (copy, nonatomic) NSURL *backgroundImageURL;
 
 /// Set a background image, displayed while tiles are being downloaded.
-@property (readwrite, nonatomic) UIImage *backgroundImage;
+@property (strong, nonatomic) UIImage *backgroundImage;
 
 /// Point on which to center the map by default, removed when panned.
 @property (nonatomic, assign) CGPoint centerPoint;
