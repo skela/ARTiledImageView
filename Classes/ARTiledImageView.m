@@ -167,7 +167,7 @@
         }
 
         id <SDWebImageOperation> operation = nil;
-        operation = [SDWebImageManager.sharedManager downloadWithURL:tileURL options:0 progress:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished) {
+        operation = [SDWebImageManager.sharedManager loadImageWithURL:tileURL options:0 progress:nil completed:^(UIImage *image,NSData* data,NSError *error,SDImageCacheType cacheType,BOOL finished,NSURL *imageURL) {
             if (!wself || !finished) {
                 return;
             }
